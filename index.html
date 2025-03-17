@@ -1,44 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishbarna Kafle</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishbarna Kafle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Ishbarna Kafle</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="#Blogs" class="btn" onclick="window.location.href='https://medium.com/@izzuser12'">Blogs</a>
-    </header>
+  <!-- Blog Button -->
+  <div class="blog-button">
+    <a href="https://medium.com/@izzuser12" target="_blank">Blog</a>
+  </div>
 
-    <section id="home" class="intro">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-        <h2>Hello! I am <strong>Ishbarna Kafle</strong>.</h2>
-        <p>Thanks for visiting my portfolio. It's a work in progress. Please check back soon for updates!</p>
-        <a href="#Message" class="btn Message-btn">Message</a>
-    </section>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="container">
+      <h1 class="logo">Ishbarna Kafle</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <section id="social-media">
-        <h2>Connect with me</h2>
-        <div class="social-links">
-            <a href="https://x.com/ishbarna" target="_blank" class="icon twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/ishbarna-kafle/" target="_blank" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/ishbarna" target="_blank" class="icon github"><i class="fab fa-github"></i></a>
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="container">
+      <div class="home-content">
+        <!-- Circular Photo -->
+        <div class="profile-photo">
+          <img src="profile.jpg" alt="Your Name">
         </div>
-    </section>
+        <h1>Hi, I'm <span class="highlight">Ishbarna Kafle</span></h1>
+        <p>Tech Explorer | Cybersecurity Enthusiast | Creative Designer </p>
+        <div class="social-icons">
+          <a href="https://github.com/ishbarna" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/ishbarna-kafle" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/ishbarna" target="_blank"><i class="fab fa-x"></i></a>
+          <a href="izzuser12@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Ishbarna Kafle. All rights reserved.</p>
-    </footer>
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+      <h2><a href="#projects">Projects</a></h2>
+      <div class="projects-container">
+        <a href="cybersecurity.html" class="project-box cybersecurity">
+          <div class="overlay">
+            <h3>Cybersecurity Projects</h3>
+            <p>Coming Soon</p>
+          </div>
+        </a>
+        <a href="graphics.html" class="project-box graphics-design">
+          <div class="overlay">
+            <h3>Graphics Design Projects</h3>
+            <p>Coming Soon</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="img1.jpeg" alt="Gallery Image 1">
+        </div>
+        <div class="gallery-item">
+          <img src="img2.jpg" alt="Gallery Image 2">
+        </div>
+        <div class="gallery-item">
+          <img src="img3.jpeg" alt="Gallery Image 3">
+        </div>
+        <div class="gallery-item">
+          <img src="img4.png" alt="Gallery Image 4">
+        </div>
+        <div class="gallery-item">
+          <img src="img5.png" alt="Gallery Image 5">
+        </div>
+        <div class="gallery-item">
+          <img src="img6.png" alt="Gallery Image 6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me for collaborations, opportunities, or just a friendly hello!</p>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>izzuser12@gmail.com</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-Discord"></i>
+            <p>ishbarna</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Kathmandu, Nepal</p>
+          </div>
+        </div>
+        <form action="https://formspree.io/f/manenqrv" method="POST" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ishbarna Kafle. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
