@@ -7,6 +7,7 @@ body {
     color: #fff;
 }
 
+/* Header */
 header {
     background-color: #333;
     color: #fff;
@@ -17,8 +18,10 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 24px;
 }
 
+/* Back Button */
 .back-button {
     position: absolute;
     left: 20px;
@@ -32,16 +35,19 @@ header h1 {
     cursor: pointer;
     text-decoration: none;
     font-size: 14px;
+    transition: background-color 0.3s ease;
 }
 
 .back-button:hover {
     background-color: #555;
 }
 
+/* Main Content */
 main {
     padding: 20px;
 }
 
+/* Project Section */
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -49,8 +55,7 @@ main {
     justify-content: center;
 }
 
-
-
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
@@ -59,4 +64,30 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Responsive Design for Phones */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .back-button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    main {
+        padding: 15px 10px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 8px 0;
+    }
 }
