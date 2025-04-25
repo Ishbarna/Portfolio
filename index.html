@@ -1,155 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ishbarna Kafle</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishbarna Kafle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="profile.jpg" alt="Logo" class="avatar">
+                    <span>Ishbarna Kafle</span>
+                </div>
+                <nav class="nav">
+                    <button class="hamburger" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="#about"><i class="fas fa-user"></i> <span class="nav-text">About</span></a></li>
+                        <li><a href="#projects"><i class="fas fa-code"></i> <span class="nav-text">Projects</span></a></li>
+                        <li><a href="#participation"><i class="fas fa-users"></i> <span class="nav-text">Participation</span></a></li>
+                        <li><a href="#blog"><i class="fas fa-blog"></i> <span class="nav-text">Blog</span></a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i> <span class="nav-text">Contact</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <div class="container">
-      <h1 class="logo">Ishbarna Kafle</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+    <main class="container">
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <p>I'm a passionate Computer Engineering Student with a creative flair for graphic design, With expertise in securing digital assets and crafting compelling visual identities, I bridge the gap between technical security and aesthetic design.</p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3><i class="fas fa-lock"></i> Cybersecurity</h3>
+                    <p>Learning ethical hacking, penetration testing, vulnerability assessment, and cybersecurity fundamentals, while actively engaging in tech communities.</p>
+                </div>
+                
+                <div class="about-card">
+                    <h3><i class="fas fa-paint-brush"></i> Graphic Design</h3>
+                    <p>Creating impactful visual identities, logos, and marketing materials for tech-focused businesses.</p>
+                </div>
+            </div>
+        </section>
 
-  <!-- Home Section -->
-  <section id="home" class="section">
-    <div class="container">
-      <div class="home-content">
-        <!-- Circular Photo -->
-        <div class="profile-photo">
-          <img src="profile.jpg" alt="Your Name">
-        </div>
-        <h1>Hi, I'm <span class="highlight">Ishbarna Kafle</span></h1>
-        <p>Tech Explorer | Cybersecurity Enthusiast | Creative Designer </p>
-        <div class="social-icons">
-          <a href="https://github.com/ishbarna" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/ishbarna-kafle" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://x.com/ishbarna" target="_blank"><i class="fab fa-x"></i></a>
-          <a href="izzuser12@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
+        <section id="projects" class="section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Citiverify</h3>
+                        <span class="project-date">Hackathon</span>
+                    </div>
+                    <p>Document verification system with behavioral biometrics and AI-powered threat detection.</p>
+                    <div class="project-tags">
+                        <span>html</span>
+                        <span>css</span>
+                        <span>js</span>
+                        <span>python</span>
+                        <span>OCR</span>
+                    </div>
+                </div>
 
-<!-- Projects Section -->
-<section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-container">
-        <a href="cybersecurity.html" class="project-box cybersecurity">
-          <div class="overlay">
-            <h3>Cybersecurity Projects</h3>
-            <p>Coming Soon</p>
-          </div>
-        </a>
-        <a href="graphics.html" class="project-box graphics-design">
-          <div class="overlay">
-            <h3>Graphics Design Projects</h3>
-            <p>Coming Soon</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>COmming soon</h3>
+                        <span class="project-date">2025</span>
+                    </div>
+                    <p>--------------------------------------.</p>
+                    <div class="project-tags">
+                        <span>python</span>
+                    </div>
+                </div>
 
-  <!-- Gallery Section -->
-  <section id="gallery" class="section">
-    <div class="container">
-      <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <div>
-            <img src="img1.jpeg" alt="Gallery Image 1">
-            <p class="event-caption">Presention</p>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div>
-            <img src="img2.jpg" alt="Gallery Image 2">
-            <p class="event-caption">Hackathon</p>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div>
-            <img src="img3.jpeg" alt="Gallery Image 3">
-            <p class="event-caption">Software Freedom Day</p>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div>
-            <img src="img4.png" alt="Gallery Image 4">
-            <p class="event-caption">Youth Speak Forum</p>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div>
-            <img src="img5.png" alt="Gallery Image 5">
-            <p class="event-caption">Python Workshop</p>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div>
-            <img src="img6.png" alt="Gallery Image 6">
-            <p class="event-caption">Orbit Hacks</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>comming soon</h3>
+                        <span class="project-date">2025</span>
+                    </div>
+                    <p>comming soon.</p>
+                    <div class="project-tags">
+                        <span>canva</span>
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out to me for collaborations, opportunities, or just a friendly hello!</p>
-      <div class="contact-content">
-        <div class="contact-info">
-          <div class="info-item">
-            <i class="fas fa-envelope"></i>
-            <p>izzuser12@gmail.com</p>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-Discord"></i>
-            <p>ishbarna</p>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Kathmandu, Nepal</p>
-          </div>
-        </div>
-        <form action="https://formspree.io/f/manenqrv" method="POST" class="contact-form">
-          <div class="form-group">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="submit-button">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
+        <section id="participation" class="section">
+            <h2 class="section-title">Community Engagement</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025-present</div>
+                    <div class="timeline-content">
+                        <h3>CyberSecops</h3>
+                        <p>Executive</p>
+                    </div>
+                </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Ishbarna Kafle. All rights reserved.</p>
-    </div>
-  </footer>
+                <div class="timeline-item">
+                    <div class="timeline-date">2025-present</div>
+                    <div class="timeline-content">
+                        <h3>Hackademia</h3>
+                        <p>College Ambassador</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2024-present</div>
+                    <div class="timeline-content">
+                        <h3>Nepal Tech Community</h3>
+                        <p>Subcommunity Captain</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <h3>Comming soon</h3>
+                    <p class="blog-meta">....</p>
+                    <p>soon...</p>
+                    <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>>
+                </div>
+
+                <div class="blog-card">
+                    <h3>Comming soon</h3>
+                    <p class="blog-meta">....</p>
+                    <p>soon.</p>
+                    <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="#" class="btn">View All Posts</a>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:contact@example.com">izzuser12@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>Kathmandu, Nepal</p>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Ishbarna" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ishbarna-kafle/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/ishbarna" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://tryhackme.com/p/izzuser12" target="_blank" aria-label="Tryhackme"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Ishbarna. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/Ishbarna" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ishbarna-kafle/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/ishbarna" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://tryhackme.com/p/izzuser12" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
 </body>
 </html>

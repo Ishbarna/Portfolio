@@ -1,0 +1,31 @@
+// Hamburger menu toggle
+const hamburger = document.querySelector('.hamburger');
+const navList = document.querySelector('.nav-list');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navList.classList.toggle('active');
+});
+
+// Close menu when clicking a link
+document.querySelectorAll('.nav-list a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navList.classList.remove('active');
+    });
+});
+
+// Back to top button
+const backToTopButton = document.getElementById("back-to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.style.display = "flex";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+});
+
+backToTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
