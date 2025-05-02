@@ -37,6 +37,111 @@
         </div>
     </header>
 
+    <!--popop window-->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Overlay background */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    /* Popup box */
+    .popup-box {
+  --accent: #58a6ff;
+      padding: 200px;
+      width: 1000px;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 0 20px rgba(84, 101, 230, 0.2);
+    }
+
+    .popup-box img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .popup-box h2 {
+      margin-bottom: 10px;
+    }
+
+    .popup-box p {
+      font-size: 20px;
+      color: #2b43ca;
+    }
+
+    /* Close button */
+    .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 15px;
+      font-size: 30px;
+      color: #4c57e6;
+      text-decoration: none;
+    }
+
+    .close-btn:hover {
+      color: red;
+    }
+
+    /* Hide popup when checkbox is checked */
+    #popup-toggle:checked ~ .popup-overlay {
+      display: none;
+    }
+
+    /* Hidden checkbox to toggle visibility */
+    #popup-toggle {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toggle (cut) checkbox -->
+  <input type="checkbox" id="popup-toggle">
+
+  <!-- Popup container -->
+  <div class="popup-overlay">
+    <div class="popup-box">
+      <label for="popup-toggle" class="close-btn">&times;</label>
+      <img src="picture.jpg" alt="Your Photo">
+      <h2>Ishbarna Kafle</h2>
+      <p> Welcome to my website!</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+<!--Code-->
     <main class="container">
         <section id="about" class="section">
             <h2 class="section-title">About Me</h2>
@@ -154,7 +259,7 @@
             <div class="contact-grid">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:contact@example.com">izzuser12@gmail.com</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="izzuser12@gmail.com">izzuser12@gmail.com</a></p>
                     <p><i class="fas fa-map-marker-alt"></i>Kathmandu, Nepal</p>
                     
                     <div class="social-links">
