@@ -34,3 +34,13 @@ backToTopButton.addEventListener("click", () => {
 document.oncontextmenu=()=> {
     return false;
 }
+document.onkeydown = e => {
+    //disable F12
+    if (e.key== "F12"){
+        return false;
+    }
+}
+//prevent from getting source code by ctrl+U 
+if(e.ctrlkey && e.key=="u"){
+    return false;
+}
